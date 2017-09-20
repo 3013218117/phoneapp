@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<style type="text/css">
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			.mui-segmented-control {
+				width: 90%;
+				margin-left: 5%;
+				margin-top: 2%;
+				border-radius: 10px;
+			}
+			
+			#tijiao {
+				font-family: "微软雅黑";
+				font-size: 15px;
+				color: #0062ff;
+				position: absolute;
+				right: 20px;
+				top: 12px;
+			}
+			
+			.getdanghao {
+				font-family: "微软雅黑";
+				font-size: 15px;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+			}
+			
+			.getState {
+				font-family: "微软雅黑";
+				font-size: 15px;
+				color: #FFFFFF;
+				position: absolute;
+				right: 135px;
+				top: 10px;
+			}
+			
+			.getDate {
+				font-family: "微软雅黑";
+				font-size: 15px;
+				position: absolute;
+				right: 5px;
+				top: 10px;
+			}
+			
+			.wentimiaoshu {
+				width: 100%;
+				height: 60px;
+			}
+			
+			.SiteInspector {
+				font-size: 16px;
+				font-weight: normal;
+				color: #000000;
+			}
+		</style>
+	</head>
+
+	<body>
+
+        <header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-arrowleft" href="mygongdan.html"></a>
+			<h1 id="title" class="mui-title">创建/编辑工单</h1>
+			<a href = "#" id="tijiao" class="tijiao">提交</a>
+		</header>
+		
+		<div class="mui-content">
+			<div id="segmentedControl" class="mui-segmented-control" mui-table-cell mui-col-xs-10>
+				<a class="mui-control-item mui-active" href="#item1">
+					基本信息
+				</a>
+				<a class="mui-control-item " href="#item2">
+					处理过程
+				</a>
+				<a class="mui-control-item " href="#item3">
+					备件消耗
+				</a>
+			</div>
+			<div class="mui-content-padded">
+				<div id="item1" class="mui-control-content mui-active">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell" style="height: 40px;" >
+							<div class="mui-table">
+							  <p class="getdanghao">单号： W100000001</p>
+							  <p class="getState" style="background-color: lightskyblue;">新创建</p>
+							  <p class="getDate">2017/11/01 12:00</p>
+							</div>
+						</li>
+					</ul>
+					<div class="title">
+						问题描述
+					</div>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<input class="wentimiaoshu" value="必填" />
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">上传照片</a>
+						</li>
+					</ul>
+					<div class="title">
+						故障类别
+					</div>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">请选择</a>
+						</li>
+					</ul>
+					<div class="title">
+						关联站点
+					</div>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">请选择</a>
+						</li>
+					</ul>
+					<div class="title">
+						处理人员
+					</div>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">请选择</a>
+						</li>
+						<li class="mui-table-view-cell">
+							短信通知
+							<div class="mui-switch mui-active">
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+					</ul>
+					<div class="title">
+						通知人员
+					</div>
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">请选择</a>
+						</li>
+						<li class="mui-table-view-cell">
+							短信通知
+							<div class="mui-switch mui-active">
+								<div class="mui-switch-handle"></div>
+							</div>
+						</li>
+						<button type="button" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">提交/编辑</button>
+					</ul>
+
+				</div>
+				<div id="item2" class="mui-control-content ">
+					<ul class="mui-table-view">
+						<div class="mui-content-padded">
+							<li class="mui-table-view-cell">
+								<div align="center">
+									<a type="button"  href= "addgdprocess.html" class="mui-btn mui-btn-success mui-icon mui-icon-plus">填写过程</a>
+								</div>
+							</li>
+						</div>
+					</ul>
+
+					<ul class="mui-table-view ">
+						<li class="mui-table-view-cell"  >
+							<p class="SiteInspector">站点巡视员甲</h4>
+								<p class="getDate">2017/11/01 12:25</p>
+								<p class="mui-h5 ">创建工单，转交【维修计划岗乙】处理：</p>
+						</li>
+					</ul>
+					<ul class="mui-table-view ">
+						<li class="mui-table-view-cell"  >
+							<p class="SiteInspector">站点巡视员甲</h4>
+								<p class="getDate">2017/11/01 12:25</p>
+								<p class="mui-h5 ">创建工单，转交【维修计划岗乙】处理：通知【Admin】</p>
+						</li>
+					</ul>
+
+				</div>
+				<div id="item3" class="mui-control-content ">
+					<ul class="mui-table-view">
+						<div class="mui-content-padded">
+							<li class="mui-table-view-cell">
+								<div align="center">
+									<a type="button"  href= "beijianlist.html" class="mui-btn mui-btn-success mui-icon mui-icon-plus">添加备件</a>
+								</div>
+							</li>
+						</div>
+					</ul>
+					<ul class="mui-table-view ">
+						<li class="mui-table-view-cell" style="height: 80px;">
+							<div class="mui-table">
+								<a class="mui-navigate-right" href="#">
+									<p class="mui-h4 " style="color: blue;">工业盐</p>
+									<p class="mui-h5">编号：YHP-SAIL001</p>
+									<p class="mui-h5">单位：KG</p>
+								</a>
+							</div>
+						</li>
+						<li class="mui-table-view-cell" style="height: 80px;">
+							<div class="mui-table">
+								<a class="mui-navigate-right" href="#">
+									<p class="mui-h4 " style="color: blue;">工业盐</p>
+									<p class="mui-h5">编号：YHP-SAIL001</p>
+									<p class="mui-h5">单位：KG</p>
+								</a>
+							</div>
+						</li>
+					</ul>
+					<ul class="mui-table-view">
+						<button type="button" class="mui-btn mui-btn-primary mui-btn-block mui-btn-outlined">完成维修/关闭工单</button>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+
+	</body>
+    <script src="../../js/mui.min.js"></script>
+		<script>
+			//选项卡点击事件
+			//mui初始化
+			mui.init({
+				swipeBack: true //启用右滑关闭功能
+			});
+			mui('.mui-bar-tab').on('tap', 'a', function(e) {
+				var targetTab = this.getAttribute('href');
+				if(targetTab == activeTab) {
+					return;
+				}
+				//更换标题
+				//				title.innerHTML = this.querySelector('.mui-tab-label').innerHTML;
+				//显示目标选项卡
+				//若为iOS平台或非首次显示，则直接显示
+				if(mui.os.ios || aniShow[targetTab]) {
+					plus.webview.show(targetTab);
+				} else {
+					//否则，使用fade-in动画，且保存变量
+					var temp = {};
+					temp[targetTab] = "true";
+					mui.extend(aniShow, temp);
+					plus.webview.show(targetTab, "fade-in", 300);
+				}
+				//隐藏当前;
+				plus.webview.hide(activeTab);
+				//更改当前活跃的选项卡
+				activeTab = targetTab;
+			});
+		</script>
+</html>

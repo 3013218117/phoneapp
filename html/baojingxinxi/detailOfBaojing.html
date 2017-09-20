@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<link rel="stylesheet" href="../../css/mydefine.css">
+		<style>
+			html,body {
+				background-color: #efeff4;
+			}
+			.dataInformation{
+				color:darkgrey;
+				float: right;
+			}
+			.getCelue{
+				font-size: 16px;
+	            position: absolute;
+				top: 12px;
+				right: 30px;
+				color: darkgray;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-arrowleft" href="../../baojingxinxi.html"></a>
+			<h1 id="title" class="mui-title">报警信息</h1>
+		</header>
+		<div class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll ">
+			
+				<p class="mui-content-padded">基本信息</p>
+			
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell">
+				    	报警主题
+				    	<span class="dataInformation">锅炉温度过高</span>
+				    </li>
+				    <li class="mui-table-view-cell">
+				    	报警时间
+				    	<span class="dataInformation">2017/11/01 12:01:01</span>
+				    </li>
+				    <li class="mui-table-view-cell">
+				    	报警等级
+				    	<span class="dataInformation" style="color: red;">严重</span>
+				    </li>
+				</ul>
+				<p class="mui-content-padded">相关变量</p>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell">
+				    	一次供温
+				    	<span class="dataInformation">22℃</span>
+				    </li>
+				    <li class="mui-table-view-cell">
+				    	<div class="mui-table">
+					    	<a class="mui-navigate-right" href="baojingceluo.html">
+						    	<p style="font-size:16px;color: black;">报警策略
+						    	<span class="getCelue" >锅炉一次供温低于30℃时触发</span>
+						    	</p>
+					    	</a>
+				    	</div>
+				    </li>
+				</ul>
+				<p class="mui-content-padded">确认信息</p>
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell" style="height: 90px;">
+				    	无
+				    </li>
+				    <li class="mui-table-view-cell">
+					    	确认人
+					    	<span class="dataInformation" >维修甲</span>
+				    </li>
+				    <li class="mui-table-view-cell">
+					    	确认时间
+					    	<span class="dataInformation" >2017/11/01 12:01:01</span>
+				    </li>
+				</ul>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script>
+				 //选项卡点击事件
+				//mui初始化
+				mui.init({
+				swipeBack: true //启用右滑关闭功能
+				});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+{
+	"html/gongdan/gongdanxiangqing.html": {
+		"resources": [
+			"html/gongdan/addgdprocess.html",
+			"html/gongdan/beijianlist.html",
+			"html/gongdan/mygongdan.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"html/gongdan/addgdprocess.html",
+			"html/gongdan/beijianlist.html",
+			"html/gongdan/mygongdan.html"
+		]
+	},
+	"baojingxinxi.html": {
+		"resources": [
+			"css/mydefine.css"
+		]
+	},
+	"main.html": {
+		"resources": [
+			"css/style1.css",
+			"js/mui.min.js",
+			"zhandian.html",
+			"fonts/icomoon.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"baojingxinxi.html",
+			"gongdan.html",
+			"zhandian.html",
+			"setting.html"
+		]
+	},
+	"gongdan.html": {
+		"resources": [
+			"html/gongdan/mygongdan.html",
+			"html/gongdan/gongdanxiangqing.html"
+		],
+		"refer": [
+			"html/gongdan/mygongdan.html",
+			"html/gongdan/gongdanxiangqing.html"
+		]
+	},
+	"zhandian.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"html/zhangdian/zhandian.html"
+		],
+		"refer": [
+			"html/zhangdian/zhandian.html"
+		]
+	},
+	"setting.html": {
+		"resources": [
+			"js/feedback.js",
+			"css/feedback-page.css",
+			"js/feedback-page.js",
+			"js/mui.view.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		]
+	},
+	"html/gongdan/addgdprocess.html": {
+		"resources": [
+			"js/app.js",
+			"js/jquery-3.1.1.min.js",
+			"html/gongdan/gongdanxiangqing.html",
+			"js/addimage.js",
+			"images/iconfont-tianjia.png"
+		],
+		"refer": [
+			"html/gongdan/gongdanxiangqing.html"
+		]
+	},
+	"html/gongdan/mygongdan.html": {
+		"resources": [
+			"html/gongdan/gongdanxiangqing.html",
+			"gongdan.html"
+		],
+		"refer": [
+			"html/gongdan/gongdanxiangqing.html",
+			"gongdan.html"
+		]
+	},
+	"html/zhangdian/zhandian.html": {
+		"resources": [
+			"zhandian.html",
+			"html/zhangdian/historyDataOfState.html"
+		],
+		"refer": [
+			"zhandian.html",
+			"html/zhangdian/historyDataOfState.html"
+		]
+	},
+	"html/zhangdian/historyDataOfState.html": {
+		"resources": [
+			"html/zhangdian/zhandian.html",
+			"js/mui.picker.min.js",
+			"css/mui.picker.min.css"
+		],
+		"refer": [
+			"html/zhangdian/zhandian.html"
+		]
+	}
+}
